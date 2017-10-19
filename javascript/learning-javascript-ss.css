@@ -1,0 +1,20 @@
+*{
+	margin:0px;
+	padding:0px;
+	border:0px;
+	font-family:verdana sans-serif;
+	color:white;
+}
+
+header#header-section{
+	padding:30px;
+	margin-bottom:30px;
+	border-bottom:black solid 5px;
+	background-color:grey;
+	text-align:center;
+}
+
+body{
+	background:url("tree background z.jpg") no-repeat, fixed 200%, 200%;
+	background-size: 1500px;	
+}

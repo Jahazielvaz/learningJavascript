@@ -1,0 +1,21 @@
+*{
+	border:0px;
+	margin:0px;
+	padding:0px;
+}
+
+h1.first-words{
+	margin:40px;
+}
+
+
+ul.list-items{
+	margin:55px;
+}
+
+div.text-container{
+	margin-left:40px;
+	margin-right:40px;	
+	margin-top:40px;
+}
+

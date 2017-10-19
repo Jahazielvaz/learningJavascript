@@ -1,0 +1,607 @@
+  GIT
+
+WHAT IS GIT: Git is the world's most popular version control system.
+GIT helps us manage our project's files.
+
+WHAT DOES GIT DO THAT MAKES MANAGING OUR FILES EASIER?
+-HISTORY: Git keeps track of every change that we make to our project. We can have git tell us on which days we changed each files, and it will even show us which lines of code we added and which ones we removed. Nothing is ever lost of final because of it's history.
+
+-COLLABORATION: A common concern is trying to avoid accidentally removing or tampering with other people's code. Git merges and updates information that multiple developers are working on in order to keep the code up to date. Git allows you to be more productive since you can all work on making your changes at the same time. 
+
+-FEATURE BRANCHES:  Makes is easy to work on multiple features at once.
+
+WHY SHOULD I LEARN GIT: It's assumed that you know GIT. This will bring structure and organization to the code.
+
+WHERE DO I BEGIN?: It's time to see git in action. 
+
+
+
+							
+
+
+
+----------------------LESSON 2: GIT AND GITHUB VOCAB AND DEFINITIONS--------------------------
+
+LESSON 2:
+GOALS:
+1- GROW MY GIT VOCABULARY
+2- SEE GIT IN ACTION
+
+
+GIT VOCAB:
+
+REPOSITORY: In git, we don't call it a project but rather a repository(repo): This is where git saves all of the changes and all of the data for a particular project
+
+THE WORKING DIRECTORY: The folder location on your computer where your project list. (GIT's job is to track all of the changes we make to all of the files within our folder, or our working directory.)
+
+COMMIT: Git doesn't save or store any changes we make into it's history until we actively commit those changes. It would be considered a second save.
+
+STAGING: Before we are allowed to commit changes, we have to stage changes. It means getting something ready or preparing our changes
+	EXAMPLE: We worked on a project, and we mada changes to 12 different files, but we only want to commit 4 of those files into git's history. Stagins is our chance to select which files we want to commit. they go on the staging area, and the we make our final edits.
+
+
+
+
+
+
+TERMINAL/COMMAND LINE(EVERY COMPUTER HAS IT): It's a place where we can type commands.  
+
+GIT STORING: Git stores all of my data including folders, and code, etc in a hidden folder deep inside our GIT repository. Git has a hidden command folder that stores all of the folders, changes, commands, etc. Git stores all of our data locally. 
+THIS BRINGS 2 PROBLEMS: One is that if you were to damage your computer, there goes all of your saved changes. Two is that other people wouldn't be able to collaborate with me since only I have access to my computer.
+
+GITHUB: This is the way to store all your git in an online repository, to solve the damaged computer, and people not being able to collaborate with us issues
+GITHUB is just one of many many services that can host your repository. It does not equal GIT.
+
+PUSH: This is when we take the repository that's stored in our harddrive, and transfer it over to github.
+
+PULL: This is when we pull in the latest changes from our web repository(GITHUB) into our local repository (OUR LOCAL GIT)
+
+
+							
+
+
+
+----------------LESSON 3: COMMAND-LINE BASICS AND INSTALLING GIT ON MY COMPUTER----------------
+
+LESSON 3 GOALS:
+1-INSTALL GIT
+2-FIND/ OPEN COMMAND-LINE
+3-USING THE COMMAND-LINE: TO GET A STRONGER UNDERSTANDING OF HOW GIT WORKS
+4-TRY A FEW GIT COMMANDS 
+
+
+-----STEPS TO FOLLOW 
+
+INSTALLING GIT: Look for an application named terminal.
+
+IDENTIFYING WHETHER YOUR GIT IS ALL READY DOWNLOADED: git--version
+
+INSTALLING GIT: git-scm.com
+
+CONFIGURING USERNAME AND EMAIL: git config --global user.name "jahaziel.vaz"
+								git config --global user.email "jahaziel.vaz@gmail.com"
+
+CREATE A NEW FOLDER ON MY COMPUTER: SITES
+
+NAVIGATE TO THAT FOLDER FROM THE COMMAND LINE (The commandline is always working in or pointing towards a directory in my computer): 
+
+SEEING WHERE THE COMMAND LINE IS CURRENTLY POINTING TOWARDS: pwd (STANDS FOR: pring the working directory)
+
+CHANGING FOLDER DIRECTORY FOR THE COMMAND LINE: cd (STANDS FOR: change directory) and drag the folder onto the command line.
+
+CREATE ANOTHER FOLDER FROM THE COMMAND LINE: mkdir "FOLDER NAME"
+
+BEGIN AN IMAGINARY REPOSITORY WITHIN THE HELLO WORLD DIRECTORY: First navigate in to the hello world directory, by using cd followed by the folder name.
+
+LET'S TELL GIT TO BEGIN TRACKING ANYTHING THAT HAPPENS WITHIN THIS HELLO WORLD FOLDER/ CREATE A BRAND NEW REPOSITORY:
+
+-------BY NOW YOU'VE ADDED AND COMMITED FILES, AND HAVE RESTORED THEM-----------
+
+CLONING REPOSITORIES: Point back towards your main project folder.
+
+
+
+
+
+
+
+
+
+-----------------------------------------SPECIFIC COMMANDS----------------------------------- 
+
+
+
+--------GIT COMMANDS 
+
+clear: Clears all your code
+
+pwd: Stands for print the working directory(It tells you what folder your git is currently pointing towards.)
+
+cd: Stands for change directory (just drag the folder you want to change it to, right next to this command.)
+
+mkdir "folder name": This command creates a new directory/folder within the directory it's currently pointing towards.
+
+git init: This turns the current directory into a new repository.
+
+touch "file-name": This is how you can create new coding files using git.
+
+git status: This is how git tells us what changes we've made to our folders.
+
+
+ls: Lists all the content in your repository, or in other words all the files and folders in your current directory
+
+ls -la: This shows you even the hidden files. DO NOT MESS WITH THESE FILES. THEY'RE OPERATIONAL. IT'LL MESS UP YOUR SYSTEM IF YOU DO.
+
+git add .: This means add all of the changes that we made to our project, and the dot means the folder. 
+
+git add index.html: This is how we select what to add to the staging area. In this case we're using the name of file I want to add to the staging area 
+
+git commit -m "Use this as a message to see what you've done": This is how you commit or do your second save. Basically git takes a snap shot of this point and time, in case you ever need to recall it at some future point.
+
+git checkout -- .: This is how we restore commited files that were damaged, lost or modified.
+
+git clone https://github.com/learnWebCode/welcome-to-git.git: This is how you copy an entire repository from github or other repository sites in order to do colab projects.(Note that the current url is just an example, but that's where the url that you select goes. Also make sure you first direct git toward the directory you want it to save it to)
+
+git log: This is how you check the file committing editing and changing history
+
+  touch ss: This just adds new files
+  touch pqr Same with this
+
+git status (This will show me all the untracked files)
+
+git add -A: This will add ALL the untracked files to the Staging Area
+
+git add *: This apparently will add all of the files in your repository
+
+git remote -v: Git will show you the server address of where it thinks you want to push your current repository to.
+
+git remote add origin: This is to add a remote(git remote set-url origin will only work if you've either cloned the repository or manually added a remote called origin. If git remote -v doesn't show you any remotes, you can simply add one using this current code. Also keep in mind that the name of the remote doesn't have to be origin. You can use any name that helps you identify the particular remote.)
+
+git remote set-url origin https://github.com/Jahazielvaz/travel-site.git: This is how you change the url to which you want git to upload your repository for github.
+
+git push origin master: Uploading you repo to github. At this point your command line will ask you for your github online account
+
+
+
+
+
+
+-------NODEJS COMMANDS
+
+node fileName.js: The node command allows you to run what ever file you tell it to on the commandline
+
+
+
+
+
+-------NODE MODULES
+
+fs: This stands for file system 
+
+
+
+
+
+-------NPM COMMANDS
+
+INSTALLING DATA MANAGERS:
+npm install jquery: This is how you can install multiple database managers (Make sure your command line is pointing to the correct folder where you want to download such libraries.)
+	AVAILABLE PACKAGES:
+	-jquery
+	-normalize.css
+
+INSTALLING DEBUGGER: 
+npm install debug: This debugs any corrupt npm you may have.
+
+CREATING A PACKAGE.JSON FILE: 
+npm init: The command line will ask you for more information. Then as long as you keep pressing enter multiple times until it runs everything, it'll give you a file names package.json. This is a list of the different packages you can download. This file is our projects grocery list.This file keeps track of all of the packages our project uses
+
+INSTALLING PACKAGES:
+npm install jquery --save: This is exactly like the regular install command, except that by adding the --save, it'll save the downloaded package to the PACKAGE.JSON
+
+npm install package-list: From what I can see, this installs all the packages available for the current project, but I'm not yet sure what this command does exactly.
+
+npm install: With this command you can restore all lost packages from your chosen repository, through the packages.json file, as long as you've been saving them. 
+
+INSTALLING NPM GLOBALLY:
+npm install gulp-cli --global: This installs gulp on your command line.
+
+TROUBLESHOOTING NPM GOBAL INSTALL:
+sudo npm install gulp-cli --global: Run if the above method doesn't work for installing gulp. You just have to prefice it with the world SUDO in lower case.
+
+
+------------GULP COMMANDS
+
+gulp: This runs the default task
+gulp taskName: This runs the task which you have specified with it's name.
+
+
+
+-------------GULP PLUGINS
+
+gulp-watch: This plugin is the one mainly responsible for automation.
+
+
+
+
+
+
+
+---------------------------------LESSON 5: USING GITHUB---------------------------------------
+
+TASK 1- CREATE A NEW REPOSITORY ON GITHUB: We're going to create a travel agency site. Use dashes instead of spaces for the name.
+
+OVERVIEW FOR THE BRAND NEW REPO: Clone a repo on your local drive in order for you to upload it on github. Clone is from your instructor.
+
+TASK 2- TAKE THE FOLDER NAMED TRAVEL SITES AND PUSH IT UP TO GITHUB'S SERVERS: Keep in mind that if you cloned a repository, and you try to push that cloned repository,unto the server, github will try to push it to the original destination where you got that repo from. Use git remote to identify the url that git wants to send your repository to.
+
+TASK 3- CHANGE THE URL LISTED ON GIT, TO THE ONE YOU WANT IT TO SEND THE REPO TO: Find the url on the quick setup section of your github page, and copy the url displayed there, to your clipboard. Use the following code to change the url to the one you compied: git remote st-url origin your/website.com
+
+
+
+
+
+
+----------------------------------NODE.JS AND NPM INTRODUCTION---------------------------------
+
+
+2 THINGS YOU MUST HAVE ON ALL YOUR PROJECTS
+-AUTOMATION: Take a task and find a way to have your computer do it for you.
+-ORGANIZATION: ONE OF THE THINGS TO KEEP ORGANIZED IS PACKAGE MANAGEMENT
+-PACKAGE MANAGEMENT: Pieces of code or packages that someone else maintains. You didn't create them. Package management is a way to get all these pieces of code
+
+
+
+
+-----------------------------------------LESSON 6: NODE JS-------------------------------------
+
+GOALS:
+1- WHAT IS NODE.JS?:
+2- INSTALL NODE ON YOUR COMPUTER
+3- HANDS ON DEMO
+
+
+WHAT IS NODE JS: First let's begin a little with what it does. Some of the things it does are the following:
+-Accessing the computer's file system
+-Interacting directly with a database
+-Sending an automated email
+Node.js is a javascript runtime that lets us do just about anything. Node.js runs not on the server but it's computer based.
+
+2 MAIN THINGS YOU CAN DO WITH NODE:
+1-INSTALL NODE ON A SERVER: In this case when the users of your website or app requesting a bit of data, node is what's actually taking that incoming request and hitting up a database, or an api and bringing it back to the user.
+
+2-INSTALL NODE ON YOUR OWN PERSONAL COMPUTER: In this case we are not using node to serve up anything, but instead we're just using node as a development tool. We're using it to basically create our own little robot assistant. We're using node to automate all sorts of web development tasks that save us a ton of time.
+
+
+------WRITING NODE CODE
+
+-CREATE A NEW NODE DIRECTORY.
+-CREATE A NEW JAVASCRIPT FILE INSIDE YOUR NEW NODE DIRECTORY
+-USE THE CONSOLE LOG TO RUN RELLO WORLD
+
+
+
+---------CREATING AN HTML FILE USING NODE
+
+1-OPEN YOUR CURRENT JS FILE
+
+2-GIVE IT A VARIABLE NAME = require("fs"); <fs is a node module>
+	So now, whenever we want to access any of node's file system functions, we can just type
+	filesYo. and then the name of the function that we want
+	EXAMPLE:
+	var filesYo = require("fs")
+
+3-USE THE FUNCTION NAMED writeFile() AND PASS IT 2 ARGUMENTS ("") THE FIRST ARGUMENT CONTROLS WHERE THE FILE IS CREATED, AND THE NAME OF THE FILE. THE SECOND ARGUMENT CONTAINS THE CONTENTS OF THE FILE
+	EXAMPLE:
+	filesYo.writeFile(__dirname + "/index.html", "<h1>HTML rocks</h1>");
+
+
+
+---------PULLING DOWN AN IMAGE FROM THE INTERMNET TO OUR HARDDRIVE
+
+-USING IMAGES FROM THE INTERNET: You can use any image from the internet, you just have to pay attention to whether the url stars with https or http
+
+1-ON YOUR JS FILE CREATE A VARIABLE FOR OUR DOG URL = "urlName.com"
+	EXAMPLE: 
+	var dogUrl = "https://img.buzzfeed.com/buzzfeed-static/static/2015-02/19/10/campaign_images/webdr07/17-puppies-who-are-so-cute-they-will-make-you-mad-2-30501-1424359138-6_dblbig.jpg";
+
+2-CREATE ANOTHER VARIABLE THAT CONTROLS WHERE THIS FILE IS GOING TO BE SAVED TO ON OUR COMPUTER.
+AFTER THE VARIABLE NAME WE'LL USE NODE'S FILE SYSTEM MODULE WHICH WE CAN ACCESS WITH THE VARIABLE NAME WE PREVIOUSLY CHOSE FOR IT filesYo. AND WE'LL USE THE FUNCTION createWriteStream() AND WE ONLY NEED TO PASS IT ONE ARGUMENTS, WHICH IS WHERE THE FILE IS GOING TO BE SAVED AND IT'S NAME
+	EXAMPLE:
+	var dogFile = filesYo.createWriteStream(__dirname + "/node-dog.jpg");
+
+3-WRITING THE CODE THAT ACTUALLY GOES ONTO THE INTERNET AND GRABS THE FILE: We'll use the node module named 'https' or if the image that you want to save begins with http, then you would use that as the node module
+	EXAMPLE:
+	var https = require("https");
+
+4-NOW WE WANT TO REQUEST THAT DOG IMAGE: We'll create a new variable and after the = we'll use the https module that node provides, and it has a function named 'get' which will go onto the internet and get something. We'll pass the function 2 arguments. 1- The url that we're going to get (Which is currently stored in the var named dogUrl) 2- What we want the git function to actually do with the content that lives inside that url. So we'll create an anonymous function, and pass it the response, and within this anonymous function all we want to do is save the data that lives at this url into a new file on our hardrive named node-dog.jpg. So to do that, we want to take the response, and we want to pipe it into our dog file
+	EXAMPLE:
+	var request = https.get(dogUrl, function(respnose) {
+		response.pipe(dogfile);
+	})
+
+
+--------------------------------------------LESSON 7: NPM----------------------------------------
+
+Node
+Package 
+Manager
+
+--------NPM OVERVIEW
+1- WHAT IS NPM? WHAT IS A PACKAGE MANAGEMENT? WHY WOULD WE USE IT?
+2- WHAT TYPES OF FILES / PACKAGES DO WE HOPE TO FIND ON NPM?
+3- HANDS ON DEMO. FOLLOW ALONG STEP BY STEP
+
+1- WHAT IS PACKAGE MANAGEMENT?
+Think of it as a grocery store but for code. So if you were to bake a cake, you wouldn't go grow your own sugar cane, and crush your own wheat to make the flour. You'd go to the grocery store, and pick up the ingredients you need to make the cake. It's the same but for code. You can go and find the code you're looking for, and code you need to create awesome things. 
+	EXAMPLE: 
+	If we want to automate a bunch of code. Instead of writing a bunch of code, we can go to npm, and pck up some code to automate things for us. 
+
+NPM: Is a centrailized place where developers share their code with the world for free. so NPM is a place where a bunch of code lives, so how does package management fit in?
+
+PACKAGE MANAGEMENT: You can give a grocery list of code to your personalized robot (Which is package management) and he will fetch all the ingredients for you. Food ingredients can expire and go bad. Also Code packages can become outdated, or contain bugs, or maybe the author of the package fixes a bug, after we've all ready saved it to our computer. With package management, we can just run a single command, and our package manager can automaticalaly grab fresh copies of all our ingredients
+
+
+-----2 TYPES OF PACKAGES
+
+1- NODE PACKAGES: Packages of code that help us do things in node. 
+- AUTOMATION
+- BUILD TOOLS
+- SERVER TASKS
+
+2- OTHER THINGS: This are packages for JavaScript and CSS that we actually need for our website to actually run in our web browser.
+-jQuery 
+-Lodash
+-Bootstrap
+-Normalize.css
+
+
+
+-------------------------NPM HANDS ON
+
+1- OPEN THE COMMAND LINE: Navigate in the command line to the travel site folder.
+
+2- USE NPM TO DOWNLOAD JQUERY INTO OUR TRAVEL SITE FOLDER: Type npm install jquery
+
+3- LET'S MAKE THAT LIST OF GROCERY ITEMS: type npm init on your command line. The command line will ask you for a bit of info on your project. Keep pressing enter until it's done loading all the data. And then it's going to give you a file named package.json. This file is our projects grocery list.This file keeps track of all of the packages our project uses. You will want to create one of these packages for each of your projects.
+
+4- AUTOMATICALLY UPDATE YOUR PACKAGE.JSON: So if you open this file on your command line, you're going to notice that it's pretty empty. DOWNLOAD JQUERY AGAIN, but this time include --save and this time you should see your package keep track of your packages which in this case is jquery. 
+	EXAMPLE: npm install jquery --save 
+
+5- PACKAGE.JSON TRACKER FILE: Go ahead, and delete the node_modules directory (this will delete both jquery, and normalize.css). Because we have that recipes file package.json. All we need to restore all our packages once they've been lost, is to type the following command: npm install. and that's it.
+
+
+
+
+---------------------NPM COMMON QUESTIONS
+
+1- HOW DO I KNOW THE EXACT NAME OF PACKAGES?:
+ANSWER: Go to the npm website npmjs.com, and browse to see what packages they have available, or you can just google for what you're hoping to achieve in the package, and just include npm at the end of your search.
+
+2- HOW DO WE ACTUALLY USE THE PACKAGES JS & CSS FILES?:
+ANSWER: Leave the files in the downloaded folders, don't manually move them to your html folders. In the future we'll learn about elegant ways to add the code we need out of the pacakages exactly where we need them. 
+
+3- WHY ARE THE NEW PACKAGE FILES NOT TRACKED BY GIT WHEN I RUN GIT STATUS?:
+ANSWER: 
+
+
+
+-------------------------------------------LESSON 8: GULP--------------------------------------
+
+
+
+--------------------------GULP OVERVIEW
+
+1- WHAT IS GULP 
+2- INSTALL GULP ON YOUR COMPUTER
+3- HANDS ON DEMO: SEE GULP IN ACTION
+
+
+1- WHAT IS GULP?: GULP is a build system. A build tool. A task runner.GULP makes it easy for us to automate development tasks.
+GULP is at the heart of all automation discussed in this course. GULP by itself doesn't actually do anything. It's super lightweight, and efficient, and runs quickly.
+	EXAMPLE: 
+	This of gulp as a record player. By it self without a record, it can't play any music. 
+	GULP PLUGINS are the records. There are thousands of plugins.
+
+
+
+
+---------------------------GULP HANDS ON
+
+1- INSTALLING GULP
+	-GLOBALLY:
+		We first need to install it in our command line using npm: npm install gulp-cli --global.
+		Since in this case we used the global flag, node installed installed this into a more universal or global file. This means that we will always have global access to gulp commands. If the install doesn't work, and you're on a mac, then re-run it again, but this time prefice it with the word sudo
+			EXAMPLE: 
+			sudo npm install gulp-cli --global
+
+
+	-IN YOUR PROJECT
+		So the goal here is to install gulp in the current project we're working on (Which in this case is the travel-agency website).
+		-POINT OUR COMMAND LINE TOWARDS THAT DIRECTORY.
+		-INSTALL THE GULP PACKAGE INTO THE PACKAGE.JSON FILE. TYPE: npm install gulp --save-dev.
+		-Now you will notice a new area in the package.json file, named "devDependencies"
+		-In our previous lessons when we installed our packages with --save, they were added to the dependencies areas. These are packages that our website needs to actually run in  the browser
+		-When we installed gulp using --save-dev We saved it to this other area designated for packages that make our life as a developer easier.
+
+
+2- CREATE A BRAND NEW JAVASCRIPT FILE: Within that file we will tell GULP what to do. GULP will be expecting us to create that brand new file in the root directory of our project. and it expects us to name this file: gulpfile.js
+	EXERCISE: In the command line type touch gulpfile.js
+
+
+3- BEFORE WE WRITE ANY CODE THE FIRST THING WE WANT TO DO IS IMPORT OR REQUIRE THE GULP FILE THAT WE JUST INSTALLED. WE WANT TO IMPORT THE GULP LIBRARY CODE INTO OUR JS FILE.
+	EXAMPLE: var gulp = require("gulp");
+	and then try to run the gulp command in the command line. 
+	EVERYTHING IN GULP, REVOLVES AROUND TASKS: When we run the gulp command in our command line, gulp is expecting us to have defined a default task in this very file.
+
+
+4- DEFINE A DEFAULT TASK FOR GULP IN THE JS FILE YOU CREATED: 
+	EXAMPLE: 
+	gulp.task("default", function() {
+		console.log("Hooray - you created a Gulp task.");
+	})
+
+
+	EXPLANATION: 
+	-gulp = the name of the variable you gave it
+	
+	-. = remember that in javaScript when a variable contains a period, what comes next is considered a METHOD, and the name it has, is the method's name. In this case the method's name is task, which creates a new task for gulp
+	
+	-("default", function(){
+
+	} ) = What goes in the parenthesis, are the arguments that define, and give direction to the method. So this particular method gets 2 arguments. The first is what we want the task to be named: In this case we're creating the default task so that's why it's called "default", and the second argument is simply what we want to happen when this task runs. Instead of stating exactly what we want to happen in the parenthesis, we'll create an anonymous function, and in the function we'll tell it what we want to happen. In this case we'll log out to the console a bit of text that says "Hooray - you created a Gulp task."
+
+
+5- CREATE ANOTHER TASK:
+	EXAMPLE:
+	gulp.task("html", function(){
+		document.write("imagine something useful being done to your html here");
+	})
+
+----NOTE: If you want to run the default task  in the command line, you just have to type in gulp.
+If you want to run another task that's not the default one, then you have to type in gulp followed by the task name
+	EXAMPLE:
+	gulp html
+
+
+6- OUR FIRST GULP PLUGIN:
+	DEFINITION: gulp-watch: It's the plugin that makes automation possible. This plugin can watch specific files on our computer, and when it detects that we've saved changes to a file, it can trigger a response.
+	
+	EXERCISE: 
+	Set it up. Install this plugin, and add it to our package.json file.
+	EXAMPLE:
+	npm install gulp-watch --save-dev
+
+	EXERCISE 2: 
+	IMPORT IT IN AT THE TOP OF OUR GULP FILE: Go in your gulpfile.js, and create a variable. For this exercise, name it watch, and do the require("gulp-watch");
+
+	EXTRA TIP FOR JS:
+	When creating a variable underneath another one, you don't always have to type var. You can just get rid of the var, and add a comma to the previous variable
+	EXAMPLE:
+	var uglyPuppy = ("etc", "craziness"),
+	uglyKittens = ("blah blah blah", "Hello world");
+
+	EXERCISE 3:
+	COME DOWN TO THE BOTTOM OF THE FILE AND CREATE A NEW TASK: Name it watch. Let's create an anonymous function, so this task actually does something when we call it from the command line. In the object section is where we leverage the gulp watch plugin. Type watch so we can use the variable that we just created. And we pass the function in watch 2 arguments. The first is the file in our computer that we want to watch, for saved changes to it.
+		SUB EXERCISE: LET'S WATCH THE MAIN INDEX.HTML FILE FOR CHANGES: Type ./ to go to the root of our project, then drill into the app folder, and then the file name
+		SUB EXERCISE 2: WHENEVER WE SAVE A CHANGE TO THIS HTML FILE, LET'S AUTOMATICALLY TRIGGER, OUR HTML TASK
+	EXAMPLE:
+	gulp.task("watch", function() {
+
+		watch("./app/index.html", function(){
+			gulp.start("html");
+		})
+
+
+	})
+
+
+
+----------------------------LESSON 9 GULP SETTING UP AN AUTOMATED CSS WORKFLOW-------------------
+
+-------OVERVIEW
+
+1- WHAT IS A CSS WORKFLOW?
+2- VOCAB BUILDING: 3 IMPORTANT GULP/NODE TERMS
+3- HANDS-ON: WRITE CODE TO SETUP CSS WORKFLOW
+
+------------------
+1- WHAT IS WORKFLOW?:
+    -AUTOPREFIXER: It's an automation tool, that lets us write CSS like this: 
+	.item{
+	columns:300px 2;
+	}
+	And it automatically turns it into this:
+	.item{
+	-webkit-columns: 300px 2;
+	-moz-columns: 300px 2;
+	columns:300px 2;
+	}
+	AUTOPREFIXER CAN SAVE US A TON OF TIME.
+
+	MY OWN DEFINITION: Basically CSS workflow are tools like SASS, LESS, AND STYLUS, Which let us write CSS in ways we wish we could write it, and then they convert it to regular css so it can be supported by all webbrowsers
+
+	POSTCSS: This is the workflow we're going to be using here today: 
+	-It's the popular new post-processor
+	-Fastest to compile out of all pre/post-processors
+
+
+
+
+-------THE 3 SUPER IMPORTANT KEY TERMS
+1-gulp.src()
+2-gulp.dest()
+3-pipe()
+
+
+1- OPEN GULPFILE.JS IN OUR FAVORITE TEXT EDITOR.
+
+2- FIND THE gulp.task("styles", function(){ 
+	
+})
+SECTION: Instead of having it log some useless text like we were told on the prevous lesson, we're going to write code that implements all of the cool CSS features that we were just talking about. 
+	STEPS:
+	1-TAKE THE CONTENTS OF A CSS FILE
+	2-MANIPULATING AND CONVERTING THAT CODE,
+	3-OUTPUTTING THAT CODE INTO A BRAND NEW FILE.
+
+
+ANALOGY: Think of a stream of water running through pipes. GULP.SRC: lets us tell gulp where to begin to run water from. GULP.DEST: Lets us tell gulp where we want to place the water once it's done running through the pipes.
+	EXAMPLE:
+	 gulp.src(",/main.css") THIS WOULD POINT TOWARDS A CSS FILE THAT WE'RE USING AS THE SOURCE.
+	 gulp.dest("./temp/styles") WE WOULD POINT GULP.DEST TO THE DIRECTORY OR FOLDER, WHERE WE WANT THE NEW CSS FILE TO BE CREATED.
+
+	 * WE CAN STRING TOGETHER AS MANY DIFFERENT PIPES AS WE NEED TO. 
+	 * THIS IS AWESOME: THIS MEANS THAT WE CAN MANIPULATE OUR CSS CONTENT BY ADDING MULTIPLE PostCSS filters
+
+
+
+
+----------HANDS ON 
+
+1- USE GULP.SRC AND POINT IT TOWARDS OUR MAIN CSS FILE:
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+QUESTIONS I HAVE
+
+-Why does my directory change back to the original directory after I all ready changed it using cd?
+ANSWER: I FORGOT TO ADD A SPACE
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
